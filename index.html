@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doze game(js)</title>
+
+  <!-- css link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body >
+
+  <section class="main-section ">
+
+    <!-- p1-active p2-active are two toggle class -->
+    <div class="game-board p1-active body-wins">
+      <div class="cube " disabled aria-label='1'><span class="cube-1"></span></div>
+      <div class="cube "aria-label="2"><span class="cube-2"></span></div>
+      <div class="cube "aria-label="3"><span class="cube-3"></span></div>
+      <div class="cube "aria-label="4"><span class="cube-4"></span></div>
+      <div class="cube " aria-label="5"><span class="cube-5"></span></div>
+      <div class="cube "aria-label="6" aria-disabled=true><span class="cube-6"></span></div>
+      <div class="cube "aria-label="7"><span class="cube-7"></span></div>
+      <div class="cube "aria-label="8" ><span class="cube-8"></span></div>
+      <div class="cube "aria-label="9"><span class="cube-9"></span></div>
+    </div>
+
+    <div class="info-board body-wins">
+      <div class="info info-p1">
+        <p >Player 1</p>
+        <div class="score-sign-p1"></div>
+      </div>
+      <div class="info">
+        <p>Draw</p>
+        <div class="Draw-sign"></div>
+      </div>
+      <div class="info info-p2">
+        <p>Player 2</p>
+        <div class="score-sign-p2"></div>
+      </div>
+    </div>
+
+    <div class="win-window">
+      <p>Player <span class="winner_player">0</span> wins!!!</p>
+    </div>
+
+    <div class="monitor-container">
+      <img class="btn-svg btn-svg-record " src="src/red-circle-icon.svg" alt="">
+      <img class="btn-svg btn-svg-play-pause" src="src/play-icon.svg" alt="">
+      <p class="time">00:02</p>
+    </div>
+    <div class="recorded-items-container">
+
+      <form action="">
+        <select class="record-list"  name="records">
+          <option  value="-1">--none--</option>
+        </select>             
+      </form>
+
+    </div>
+
+    <div class="btn-container">
+      <button class="btn-previous">previous</button>
+      <button class="btn-next">next</button>
+    </div>
+  </section>
+
+  
+
+  <script src="script.js"></script>
+</body>
+</html>
